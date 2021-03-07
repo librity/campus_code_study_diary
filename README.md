@@ -1,24 +1,62 @@
-# README
+# Study on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
 
-Things you may want to cover:
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Routes](#routes)
+- [Docs](#docs)
+- [Resources](#resources)
 
-* Ruby version
+## About <a name = "about"></a>
 
-* System dependencies
+A simple Rails app that helps you manage your studies, similar to
+[this CLI project](https://github.com/librity/campus_code_study_diary_cli).
 
-* Configuration
+## Getting Started <a name = "getting_started"></a>
 
-* Database creation
+### Prerequisites
 
-* Database initialization
+- ruby 2.7.1
 
-* How to run the test suite
+### Installing
 
-* Services (job queues, cache servers, search engines, etc.)
+Clone this repo locally and run the setup script:
 
-* Deployment instructions
+```
+$ git clone https://github.com/librity/campus_code_study_diary
+$ cd campus_code_study_diary
+$ bin/setup
+```
 
-* ...
+Migrate and seed the database:
+
+```
+$ bundle exec rails db:migrate
+$ bundle exec rails db:seed
+```
+
+If everythig installed correctly, start the development server with:
+
+```
+$ bundle exec rails server
+```
+
+And open [http://localhost:3000](http://localhost:3000) on your browser.
+
+## Usage <a name = "usage"></a>
+
+You will be able to create, read, update and destroy Study Items from the
+interface. All data is persisted in an SQLite3 database.
+
+### Routes <a name = "routes"></a>
+
+- `GET` http://localhost:3000
+
+## Docs <a name = "docs"></a>
+
+- https://guides.rubyonrails.org/
+- https://github.com/puma/puma/
+
+## Resources <a name = "resources"></a>
