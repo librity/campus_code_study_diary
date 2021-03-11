@@ -1,11 +1,31 @@
-<h3>In progress...</h3>
+<div class="study_item_container backlog_container">
+  <h3>Backlog 🗄️</h3>
 
-<% @study_items.each do |study_item| %>
-  <strong>
-    <%= study_item.title %>
-  </strong>
-  <p>
-    <%= study_item.notes %>
-  </p>
-  <br />
-<% end %>
+  <% @backlog.each do |study_item| %>
+    <%= render study_item %>
+  <% end %>
+</div>
+
+<div class="study_item_container in_progress_container">
+  <h3>In progress... 📖</h3>
+
+  <% @in_progress.each do |study_item| %>
+    <%= render study_item %>
+  <% end %>
+</div>
+
+<div class="study_item_container finished_container">
+  <h3>Finished! ✅</h3>
+
+  <% @finished.each do |study_item| %>
+    <%= render study_item %>
+  <% end %>
+</div>
+
+<div class="study_item_container cancelled_container">
+  <h3>Cancelled ❌</h3>
+
+  <% @cancelled.each do |study_item| %>
+    <%= render study_item %>
+  <% end %>
+</div>

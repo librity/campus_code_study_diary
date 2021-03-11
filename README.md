@@ -1,5 +1,9 @@
 # Study on Rails
 
+<div align="center">
+  <img src=".github/home.png" />
+</div>
+
 ## Table of Contents
 
 - [About](#about)
@@ -60,3 +64,8 @@ interface. All data is persisted in an SQLite3 database.
 - https://github.com/puma/puma/
 
 ## Resources <a name = "resources"></a>
+
+- https://fonts.google.com/specimen/Roboto?preview.text_type=custom
+- https://emojipedia.org
+- https://favicon.io/emoji-favicons/open-book
+- https://stackoverflow.com/questions/9901910/how-to-add-favicon-in-rails-3-2
