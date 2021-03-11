@@ -1,0 +1,29 @@
+.study_item_container {
+  padding: 5px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.backlog_container {
+  background: lightgrey;
+}
+
+.in_progress_container {
+  background: lightblue;
+}
+
+.finished_container {
+  background: lightgreen;
+}
+
+.cancelled_container {
+  background: lightcoral;
+}
+
+.study_item {
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  border-radius: 10px;
+}

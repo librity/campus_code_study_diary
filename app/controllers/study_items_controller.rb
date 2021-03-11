@@ -1,12 +1,15 @@
 class StudyItemsController < ApplicationController
-  def new; end
+  def new
+    @study_item = StudyItem.new
+  end
 
   def create
-    new_item = StudyItem.new(study_item_params)
+    @study_item = StudyItem.new(study_item_params)
 
-    render 'new' unless new_item.save
+    return render 'new' unless @study_item.save
 
-    redirect_to root_path, success: 'Study item successfully created!'
+    flash[:notice] = 'Study item successfully created!'
+    redirect_to root_path
   end
 
   private

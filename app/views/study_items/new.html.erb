@@ -1,0 +1,46 @@
+<div class="new_item_container">
+  <h3>Create a new Study Item</h3>
+
+  <%= form_with model: @study_item, class: "study_item_form" do |f| %>
+
+    <%= render 'shared/error_messages', object: f.object %>
+
+    <div class="new_item_input">
+      <%= f.label :category_name, 'Category' %>
+      <%= f.text_field :category_name %>
+    </div>
+
+    <div class="new_item_input">
+      <%= f.label :title, 'Title' %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div class="new_item_input">
+      <%= f.label :notes, 'Notes' %>
+      <%= f.text_field :notes %>
+    </div>
+
+    <div class="new_item_radio">
+      <div>
+        <%= f.radio_button :status, :cancelled %>
+        <%= f.label :status_cancelled, "Cancelled" %>
+      </div>
+      <div>
+        <%= f.radio_button :status, :backlog %>
+        <%= f.label :status_backlog, "Backlog" %>
+      </div>
+      <div>
+        <%= f.radio_button :status, :in_progress %>
+        <%= f.label :status_in_progress, "In progress" %>
+      </div>
+      <div>
+        <%= f.radio_button :status, :finished %>
+        <%= f.label :status_finished, "Finished" %>
+      </div>
+    </div>
+
+    <div class="new_item_input">
+      <%= f.submit "Create", class: "new_item_submit" %>
+    </div>
+  <% end %>
+</div>

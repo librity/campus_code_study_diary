@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,18 +20,8 @@ a:hover {
   color: whitesmoke;
 }
 
-.navbar {
-  padding: 20px;
-  background-color: lightsalmon;
-}
-
-.navbar h1 {
-  color: aliceblue;
-}
-
-.navbar nav {
-  margin-top: 10px;
-  margin-left: 20px;
+button {
+  cursor: pointer;
 }
 
 .main_container {
@@ -40,42 +31,4 @@ a:hover {
 .main_container h3 {
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-.study_item_container {
-  padding: 5px;
-  padding-left: 20px;
-  margin-bottom: 5px;
-  border-radius: 10px;
-}
-
-.backlog_container {
-  background: lightgrey;
-}
-
-.in_progress_container {
-  background: lightblue;
-}
-
-.finished_container {
-  background: lightgreen;
-}
-
-.cancelled_container {
-  background: lightcoral;
-}
-
-.study_item {
-  background: #fff;
-  padding: 10px;
-  border-bottom: 1px solid lightgray;
-  border-radius: 10px;
-}
-
-.footer {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-
-  color: gray;
 }

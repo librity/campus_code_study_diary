@@ -1,0 +1,52 @@
+.new_item_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new_item_container h3 {
+  margin-bottom: 10px;
+}
+
+.study_item_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 60vw;
+}
+
+.new_item_input {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.new_item_input label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.new_item_radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.new_item_submit {
+  padding: 10px;
+  background: rgb(140, 208, 38);
+  border: 0;
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 10px;
+}
+
+.new_item_submit:hover {
+  background: rgb(170, 238, 170);
+  color: white;
+}
